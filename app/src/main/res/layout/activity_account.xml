@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    tools:context=".presentation.order.OrdersActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_picture_container_height"
+        android:layout_marginTop="@dimen/margin_padding_size_standard"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="@dimen/profile_cover_image_width"
+            android:layout_height="@dimen/profile_cover_image_height"
+            android:layout_marginStart="@dimen/margin_padding_size_small"
+            android:contentDescription="@string/title_profile"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_account"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_account" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_padding_size_standard"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:text="@string/prompt_email"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/profileImageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/containerOrders"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_option_container_height"
+        android:layout_marginTop="@dimen/margin_padding_size_standard"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/orders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_padding_size_standard"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="@string/my_orders"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/containerLogout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_option_container_height"
+        android:layout_marginTop="@dimen/margin_padding_size_standard"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_padding_size_standard"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="@string/logout" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</LinearLayout>

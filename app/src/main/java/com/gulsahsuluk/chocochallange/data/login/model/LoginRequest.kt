@@ -1,0 +1,3 @@
+package com.gulsahsuluk.chocochallange.data.login.model
+
+data class LoginRequest(var email: String, var password: String)

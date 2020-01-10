@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ChocoChallange</string>
+
+    <!-- Shared Preferences -->
+    <string name="choco_preferences_name" translatable="false">com.gulsahsuluk.chocochallange.CHOCO_PREFERENCES</string>
+
+    <!-- Login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+
+    <!-- Error -->
+    <string name="network_error_message">Sorry, some server problem occurs</string>
+    <string name="unexpected_error_message">Something went wrong</string>
+    <string name="empty_product_error_message">Please select at least one product</string>
+    <string name="empty_order_error_message">There are no past orders yet</string>
+
+    <string name="title_profile">Profile</string>
+    <string name="product_item_image_description">Product cover</string>
+    <string name="create_order">Create Order</string>
+    <string name="menu_account">Account</string>
+    <string name="my_orders">My Orders</string>
+    <string name="logout">Logout</string>
+</resources>
